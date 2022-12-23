@@ -1,0 +1,4481 @@
+body {
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+.nav_1 {
+    min-height: 40px;
+    background-color: #F6F7FA;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_1 .sites ul {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav_1 .sites ul li {
+    padding-left: 20px;
+}
+
+.nav_1 .sites ul li a {
+    color: #8D94AD;
+    text-decoration: none;
+}
+
+.nav_1 .sites ul li a:hover {
+    color: #CA1016;
+}
+
+.nav_1 .support ul {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav_1 .support ul li {
+    padding-left: 20px;
+}
+
+.nav_1 .support ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav_1 .support ul li a:hover {
+    color: #CA1016;
+    cursor: default;
+}
+
+.nav_1 .help_lang ul {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav_1 .help_lang ul li {
+    padding-left: 20px;
+}
+
+.nav_1 .help_lang ul li a {
+    color: #8D94AD;
+    text-decoration: none;
+}
+
+.nav_1 .help_lang ul li a:hover {
+    color: #CA1016;
+}
+
+.nav_1 .fav_login ul {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav_1 .fav_login ul li {
+    padding-left: 20px;
+}
+
+.nav_1 .fav_login ul li a {
+    color: #8D94AD;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav_1 .fav_login ul li a:hover {
+    color: #CA1016;
+}
+
+.nav_2 {
+    height: 60px;
+    background: #CA1016;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-default .navbar-brand a:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.hover li a {
+    color: #8D94AD;
+}
+
+
+input[type=number]::-webkit-inner-spin-button
+input[type=number]::-webkit-outer-spin-button{
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;  
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav_1 {
+        min-height: 40px;
+        background-color: #F6F7FA;
+        font-size: 14px;
+    }
+
+    .nav_1 .sites ul {
+        position: relative;
+        left: -170px;
+    }
+
+    .nav_1 .support {
+        display: none;
+    }
+
+    .nav_1 .help_lang {
+        display: none;
+    }
+
+    .nav_1 .fav_login {
+        display: block;
+        position: absolute;
+        float: right;
+        left: 240px;
+    }
+
+    .nav_2 h4 {
+        color: white;
+        font-weight: bolder;
+        margin-left: -50px;
+    }
+
+    .nav_2 .pages ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_2 .pages ul li {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .nav_2 .pages ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_2 .pages ul li a:hover {
+        color: #F6D0CE;
+    }
+
+    .h_brand {
+        color: white;
+        font-weight: bolder;
+        margin-left: 0px;
+    }
+
+    .yeni_elan {
+        background: #7ED321;
+        border: none;
+        padding: 9px 9px 9px 9px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+        float: left;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    .yeni_elan:hover {
+        background: #85C01F;
+    }
+
+    .filters_cont {
+        background: #EBEDF3;
+        margin-top: -20px;
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    #cars {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #cars:focus {
+        color: #000;
+    }
+
+    #model {
+        position: relative;
+        left: 0px;
+        top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #model:focus {
+        color: #000;
+    }
+
+    .radio {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        width: 100%;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+    }
+
+    .radio__input {
+        display: none;
+    }
+
+    .radio__label {
+        padding: 13px 17px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        width: 100%;
+        text-align: center;
+    }
+
+    .radio__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .radio__input:checked+.radio__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #Cities {
+        position: relative;
+        left: 0px;
+        top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1 {
+        position: relative;
+        left: 0px;
+        top: 20px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    #inp2 {
+        position: relative;
+        left: 0px;
+        top: 20px;
+        width: 49%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #currency {
+        position: relative;
+        top: 30px;
+        left: 0px;
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bans {
+        position: relative;
+        left: 0px;
+        top: 110px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1_year {
+        position: relative;
+        left: 0px;
+        top: 120px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 100px;
+    }
+
+    #inp2_year {
+        position: relative;
+        left: 0px;
+        top: 120px;
+        width: 49%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 100px;
+    }
+
+    .no-border {
+        border: 0px solid transparent;
+    }
+
+
+    #elan_sayi {
+        margin-top: 70px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+
+    #elan_btn {
+        float: right;
+        margin-right: 0px;
+        margin-top: -30px;
+        padding: 10px 35px;
+        border-radius: 8px;
+        background: #CA1016;
+        border: 0px;
+        color: white;
+        transition: 0.2s;
+    }
+
+    #elan_btn:hover {
+        background: #B80D13;
+    }
+
+    .reset {
+        color: #CA1016;
+        text-decoration: none;
+        padding-left: 5px;
+    }
+
+    .reset:hover {
+        color: #CA1016;
+    }
+
+    .more_filter {
+        float: right;
+        margin-top: -20px;
+        margin-right: 20px;
+        color: #CA1016;
+    }
+
+    .more_filter:hover {
+        text-decoration: none;
+        color: #CA1016;
+    }
+
+    #color {
+        position: relative;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yanacaq {
+        position: relative;
+        left: 0px;
+        top: 70px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    #ötürücü {
+        position: relative;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #sürətlər_qutusu {
+        position: relative;
+        left: 0px;
+        top: 70px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 20px;
+    }
+
+
+
+    #həcm_min {
+        position: relative;
+        left: 0px;
+        top: 70px;
+        margin-bottom: 50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #həcm_min:focus {
+        color: #000;
+    }
+
+    #həcm_maks {
+        position: relative;
+        left: 50%;
+        top: -30px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #həcm_maks:focus {
+        color: #000;
+    }
+
+    #inp_horse {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp_horse_maks {
+        position: relative;
+        left: 50%;
+        top: -50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+
+    #yürüş_inp {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #yürüş_inp_maks {
+        position: relative;
+        left: 50%;
+        top: -50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #Yürüş {
+        margin-top: -35px;
+        margin-bottom: -60px;
+    }
+
+    .avtosalonlar {
+        position: relative;
+        top: 25px;
+        left: 0px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        width: 100%;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+        margin-bottom: 15px;
+    }
+
+    .avtosalonlar__input {
+        display: none;
+    }
+
+    .avtosalonlar__label {
+        padding: 13px 17px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .avtosalonlar__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .avtosalonlar__input:checked+.avtosalonlar__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #sahib_sayi {
+        position: relative;
+        left: 0px;
+        top: 25px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yer_sayi {
+        position: relative;
+        left: 50%;
+        top: -25px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bazar {
+        position: relative;
+        left: 0px;
+        top: -15px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .təchizat {
+        position: relative;
+        top: -10px;
+        left: 0px;
+    }
+
+    .border {
+        border-bottom: 3px solid #DFE3E9;
+        width: 69%;
+        position: relative;
+        top: -30px;
+        left: 160px;
+    }
+
+    /* Vip Elanlar */
+
+    .vip_elanlar {
+        height: 50px;
+        background: #F1F3F7;
+        border-bottom: 1px solid #EAEBF2;
+    }
+
+    .vip_a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        left: 5px;
+    }
+
+    .box {
+        width: 100%;
+        height: 266px;
+        /* background: red; */
+        position: relative;
+        border-radius: 8px;
+        left: 0px;
+        top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: 0.5s;
+        margin-right: 32px;
+        margin-bottom: 20px;
+    }
+
+    .box:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    .box_img {
+        width: 108%;
+        height: 160px;
+        border-radius: 8px;
+        margin-left: -15px;
+    }
+
+    .box_img p:nth-child(2){
+        position: absolute;
+        bottom: 105px;
+        left: 8px;
+        background: #4264FD;
+        padding: 2px 4px;
+        font-size: 11px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box_img img {
+        object-fit: cover; 
+        border-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .box_img strong {
+        font-size: 18px;
+    }
+
+    .box .part_2_box {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    .azn50{
+        display: flex;
+    }
+
+    #checkboxes{
+        position: absolute;
+        width: 100%;
+    }
+
+    #checkbox1{
+        display: none;
+
+    }
+
+    #checkbox2{
+        display: none;
+    }
+
+    #checkboxes label{
+        border: 1px solid #DFE3E9;
+        width: 14.9%;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -19px;
+        left: -10px;
+        margin-left: 8px;
+        margin-bottom: 30px;
+        transition: 0.2s;
+    }
+
+    #checkboxes label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #checkbox1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check2{
+        position: relative;
+        top: 15px;
+        left: 48.5%;
+        width: 316%;
+        height: 48px;
+    }
+
+    #check1{
+        position: relative;
+        top: 63px;
+        left: 0px;
+        width: 319%;
+        height: 48px;
+    }
+
+    #checkbox2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    
+            
+    
+    #checkboxes_təchizat{
+        position: relative;
+    }
+
+    #checkboxes_təchizat:nth-child(4)
+    {
+        margin-top: 15px;
+        position: absolute;
+        top: 1485px;
+        left: 200px;
+    }
+
+    #check_techizat_1,#check_techizat_2,#check_techizat_3,#check_techizat_4,#check_techizat_5,#check_techizat_6,#check_techizat_7,#check_techizat_8,#check_techizat_9,#check_techizat_10,#check_techizat_11,#check_techizat_12,#check_techizat_13,#check_techizat_14{
+        display: none;
+    }    
+
+
+    #checkboxes_təchizat label{
+        border: 1px solid #DFE3E9;
+        padding: 10px 5px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -15px;
+        left: 0px;
+        font-size: 12px;
+        margin-left: 8px;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
+
+    #checkboxes_təchizat label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #check_techizat_1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_2{
+        position: relative;
+        top: -152px;
+        left: 78px;
+    }
+
+    #check_techizat_2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_3:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_4:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_5:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_6:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_7:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_8:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_9:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_10:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_11:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_12:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_13:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_14:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_15:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_16:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .nav_1 {
+        min-height: 40px;
+        background-color: #F6F7FA;
+        font-size: 14px;
+    }
+
+    .nav_1 .sites ul {
+        position: relative;
+        left: -20px;
+    }
+
+    .nav_1 .support {
+        display: none;
+    }
+
+    .nav_1 .help_lang {
+        display: none;
+    }
+
+    .nav_1 .fav_login {
+        display: block;
+    }
+
+    .nav_2 h4 {
+        color: white;
+        font-weight: bolder;
+        margin-left: -50px;
+    }
+
+    .nav_2 .pages ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_2 .pages ul li {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .nav_2 .pages ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_2 .pages ul li a:hover {
+        color: #F6D0CE;
+    }
+
+    .h_brand {
+        color: white;
+        font-weight: bolder;
+    }
+
+    .yeni_elan {
+        background: #7ED321;
+        border: none;
+        padding: 9px 9px 9px 9px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+        float: left;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    .yeni_elan:hover {
+        background: #85C01F;
+    }
+
+    #cars {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #cars:focus {
+        color: #000;
+    }
+
+    #model {
+        position: relative;
+        left: 0px;
+        top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #model:focus {
+        color: #000;
+    }
+
+    .radio {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        width: 100%;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+    }
+
+    .radio__input {
+        display: none;
+    }
+
+    .radio__label {
+        padding: 13px 17px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        width: 100%;
+        text-align: center;
+    }
+
+    .radio__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .radio__input:checked+.radio__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #Cities {
+        position: relative;
+        left: 0px;
+        top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+    #inp1 {
+        position: relative;
+        left: 0px;
+        top: 20px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp2 {
+        position: relative;
+        left: 0px;
+        top: 20px;
+        width: 49%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #currency {
+        position: relative;
+        top: 30px;
+        left: 0px;
+        width: 31%;
+        height: 48px;
+        border-radius: 5px;
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bans {
+        position: relative;
+        left: 0px;
+        top: 40px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1_year {
+        position: relative;
+        left: 0px;
+        top: 50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp2_year {
+        position: relative;
+        left: 0px;
+        top: 50px;
+        width: 49%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .no-border {
+        border: 0px solid transparent;
+    }
+
+    #elan_sayi {
+        margin-top: 70px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+
+    #elan_btn {
+        float: right;
+        margin-right: 0px;
+        margin-top: -30px;
+        padding: 10px 35px;
+        border-radius: 8px;
+        background: #CA1016;
+        border: 0px;
+        color: white;
+        transition: 0.2s;
+    }
+
+    #elan_btn:hover {
+        background: #B80D13;
+    }
+
+    .reset {
+        color: #CA1016;
+        text-decoration: none;
+        padding-left: 5px;
+    }
+
+    .reset:hover {
+        color: #CA1016;
+    }
+
+    .filters_cont {
+        background: #EBEDF3;
+        margin-top: -20px;
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+
+    .more_filter {
+        float: right;
+        margin-top: -20px;
+        margin-right: 20px;
+        color: #CA1016;
+    }
+
+    .more_filter:hover {
+        text-decoration: none;
+        color: #CA1016;
+    }
+
+    #color {
+        position: relative;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yanacaq {
+        position: relative;
+        left: 0px;
+        top: 70px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    #ötürücü {
+        position: relative;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #sürətlər_qutusu {
+        position: relative;
+        left: 0px;
+        top: 70px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 20px;
+    }
+
+
+    #həcm_min {
+        position: relative;
+        left: 0px;
+        top: 70px;
+        margin-bottom: 50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #həcm_min:focus {
+        color: #000;
+    }
+
+    #həcm_maks {
+        position: relative;
+        left: 50%;
+        top: -30px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #həcm_maks:focus {
+        color: #000;
+    }
+
+    #inp_horse {
+        position: relative;
+        left: 0px;
+        top: -10px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp_horse_maks {
+        position: relative;
+        left: 50%;
+        top: -60px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #yürüş_inp {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #yürüş_inp_maks {
+        position: relative;
+        left: 50%;
+        top: -50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #Yürüş {
+        margin-top: -45px;
+        margin-bottom: -30px;
+    }
+
+
+    .avtosalonlar {
+        position: relative;
+        top: -5px;
+        left: 0px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        width: 100%;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+        margin-bottom: 15px;
+    }
+
+    .avtosalonlar__input {
+        display: none;
+    }
+
+    .avtosalonlar__label {
+        padding: 13px 17px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .avtosalonlar__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .avtosalonlar__input:checked+.avtosalonlar__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #sahib_sayi {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yer_sayi {
+        position: relative;
+        left: 50%;
+        top: -50px;
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bazar {
+        position: relative;
+        left: 0px;
+        top: -35px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .təchizat {
+        position: relative;
+        top: -10px;
+        left: 0px;
+    }
+
+    .border {
+        border-bottom: 3px solid #DFE3E9;
+        width: 77%;
+        position: relative;
+        top: -30px;
+        left: 160px;
+    }
+
+    /* Vip Elanlar */
+
+    .vip_elanlar {
+        height: 50px;
+        background: #F1F3F7;
+        border-bottom: 1px solid #EAEBF2;
+    }
+
+    .vip_a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        left: 5px;
+    }
+
+    
+    .box{
+        height: 266px;
+        /* background: red; */
+        position: relative;
+        border-radius: 8px;
+        left: 0px;
+        top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: 0.5s;
+        margin-right: 32px;
+        margin-bottom: 20px;
+    }
+
+    .box:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    .box_img {
+        width: 106%;
+        height: 160px;
+        border-radius: 8px;
+        margin-left: -15px;
+    }
+
+    .box_img p:nth-child(2){
+        position: absolute;
+        bottom: 105px;
+        left: 8px;
+        background: #4264FD;
+        padding: 2px 4px;
+        font-size: 11px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box_img img {
+        object-fit: cover;
+        border-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .box_img strong {
+        font-size: 18px;
+    }
+
+    .box .part_2_box {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    #checkboxes{
+        position: absolute;
+    }
+
+    #checkbox1{
+        display: none;
+
+    }
+
+    #checkbox2{
+        display: none;
+    }
+
+    #checkboxes label{
+        border: 1px solid #DFE3E9;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -19px;
+        left: 235px;
+        margin-left: 8px;
+        transition: 0.2s;
+    }
+
+    #checkboxes label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #checkbox1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check2{
+        position: relative;
+        top: -48px;
+        left: 165px;
+        width: 320%;
+        height: 48px;
+    }
+
+    #check1{
+        position: relative;
+        top: 0px;
+        left: -15px;
+        width: 320%;
+        height: 48px;
+    }
+
+    #checkbox2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+            
+    
+    #checkboxes_təchizat{
+        position: relative;
+    }
+
+    #checkboxes_təchizat:nth-child(4)
+    {
+        margin-top: 15px;
+        position: absolute;
+        top: 1410px;
+        left: 200px;
+    }
+
+    #check_techizat_1,#check_techizat_2,#check_techizat_3,#check_techizat_4,#check_techizat_5,#check_techizat_6,#check_techizat_7,#check_techizat_8,#check_techizat_9,#check_techizat_10,#check_techizat_11,#check_techizat_12,#check_techizat_13,#check_techizat_14{
+        display: none;
+    }    
+
+
+    #checkboxes_təchizat label{
+        border: 1px solid #DFE3E9;
+        padding: 10px 5px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -15px;
+        left: 0px;
+        font-size: 12px;
+        margin-left: 8px;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
+
+    #checkboxes_təchizat label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #check_techizat_1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_2{
+        position: relative;
+        top: -152px;
+        left: 78px;
+    }
+
+    #check_techizat_2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_3:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_4:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_5:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_6:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_7:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_8:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_9:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_10:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_11:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_12:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_13:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_14:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_15:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_16:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .nav_1 {
+        min-height: 40px;
+        background-color: #F6F7FA;
+        font-size: 14px;
+    }
+
+    .nav_1 .sites ul {
+        position: relative;
+        left: -100px;
+    }
+
+    .nav_1 .support {
+        display: none;
+    }
+
+    .nav_1 .help_lang {
+        display: block;
+    }
+
+    .nav_1 .fav_login {
+        display: block;
+    }
+
+    .nav_2 h4 {
+        color: white;
+        font-weight: bolder;
+        margin-left: -15px;
+    }
+
+    .nav_2 .pages ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_2 .pages ul li {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .nav_2 .pages ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_2 .pages ul li a:hover {
+        color: #F6D0CE;
+    }
+
+    .h_brand {
+        color: white;
+        font-weight: bolder;
+        margin-left: -10px;
+    }
+
+    .yeni_elan {
+        background: #7ED321;
+        border: none;
+        padding: 9px 9px 9px 9px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+        float: right;
+        position: relative;
+        right: -160px;
+        margin-top: -46px;
+    }
+
+    .yeni_elan:hover {
+        background: #85C01F;
+    }
+
+    #cars {
+        position: relative;
+        left: -10px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #cars:focus {
+        color: #000;
+    }
+
+    #model {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #model:focus {
+        color: #000;
+    }
+
+    .radio {
+        position: relative;
+        top: -55px;
+        left: 480px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+    }
+
+    .radio__input {
+        display: none;
+    }
+
+    .radio__label {
+        padding: 12px 16px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+    }
+
+    .radio__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .radio__input:checked+.radio__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #Cities {
+        position: relative;
+        left: -262px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1 {
+        position: relative;
+        left: 235px;
+        top: -60px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp2 {
+        position: relative;
+        left: 225px;
+        top: -60px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #currency {
+        position: relative;
+        top: -110px;
+        left: 481px;
+        width: 65px;
+        height: 48px;
+        border-radius: 5px;
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bans {
+        position: relative;
+        left: -10px;
+        top: -200px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    #inp1_year {
+        position: relative;
+        left: 235px;
+        top: -250px;
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp2_year {
+        position: relative;
+        left: 225px;
+        top: -250px;
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #elan_sayi {
+        margin-top: -60px;
+        margin-bottom: 10px;
+        margin-left: -5px;
+    }
+
+    #elan_btn {
+        float: right;
+        margin-right: 0px;
+        margin-top: -30px;
+        padding: 10px 35px;
+        border-radius: 8px;
+        background: #CA1016;
+        border: 0px;
+        color: white;
+        transition: 0.2s;
+    }
+
+    #elan_btn:hover {
+        background: #B80D13;
+    }
+
+    .reset {
+        color: #CA1016;
+        text-decoration: none;
+        margin-left: -5px;
+    }
+
+    .reset:hover {
+        color: #CA1016;
+    }
+
+    .filters_cont {
+        background: #EBEDF3;
+        margin-top: -20px;
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    .more_filter {
+        position: relative;
+        left: 400px;
+        top: -20px;
+        color: #CA1016;
+    }
+
+    .more_filter:hover {
+        text-decoration: none;
+        color: #CA1016;
+    }
+
+    #color {
+        position: relative;
+        left: -10px;
+        top: -90px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yanacaq {
+        position: relative;
+        left: 0px;
+        top: -90px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ötürücü {
+        position: relative;
+        left: 10px;
+        top: -90px;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #sürətlər_qutusu {
+        position: relative;
+        left: 10px;
+        top: -90px;
+        width: 144px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    #həcm_min {
+        position: relative;
+        left: -10px;
+        top: -70px;
+        margin-bottom: 50px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #həcm_min:focus {
+        color: #000;
+    }
+
+    #həcm_maks {
+        position: relative;
+        left: -15px;
+        top: -70px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #həcm_maks:focus {
+        color: #000;
+    }
+
+
+    #inp_horse {
+        position: relative;
+        left: 295px;
+        top: -170px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp_horse_maks {
+        position: relative;
+        left: 285px;
+        top: -170px;
+        width: 99px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #yürüş_inp {
+        position: relative;
+        left: 515px;
+        top: -220px;
+        width: 125px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #yürüş_inp_maks {
+        position: relative;
+        left: 505px;
+        top: -220px;
+        width: 96px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+
+    .avtosalonlar {
+        position: relative;
+        top: -205px;
+        left: -10px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+        font-weight: light;
+    }
+
+    .avtosalonlar__input {
+        display: none;
+    }
+
+    .avtosalonlar__label {
+        padding: 12px 12px;
+        font-size: 14px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        margin: 0px;
+    }
+
+    .avtosalonlar__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .avtosalonlar__input:checked+.avtosalonlar__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #sahib_sayi {
+        position: relative;
+        left: 0px;
+        top: -205px;
+        width: 147px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yer_sayi {
+        position: relative;
+        left: 5px;
+        top: -205px;
+        width: 127px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bazar {
+        position: relative;
+        left: -10px;
+        top: -195px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .təchizat {
+        position: relative;
+        top: -180px;
+        left: -10px;
+    }
+
+    .border {
+        border-bottom: 3px solid #DFE3E9;
+        width: 77%;
+        position: relative;
+        top: -200px;
+        left: 170px;
+    }
+
+
+    .vip_elanlar {
+        height: 50px;
+        background: #F1F3F7;
+        border-bottom: 1px solid #EAEBF2;
+    }
+
+    .vip_a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        left: -5px;
+    }
+
+    .box {
+        width: 100%;
+        height: 266px;
+        /* background: red; */
+        position: relative;
+        border-radius: 8px;
+        left: -20px;
+        top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: 0.5s;
+        margin-right: 32px;
+        margin-bottom: 20px;
+    }
+
+    .box:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    .box_img {
+        width: 110%;
+        height: 160px;
+        border-radius: 8px;
+        margin-left: -15px;
+    }
+
+    .box_img p:nth-child(2){
+        position: absolute;
+        bottom: 105px;
+        left: 8px;
+        background: #4264FD;
+        padding: 2px 4px;
+        font-size: 11px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box_img img {
+        object-fit: cover; 
+        border-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: 100%;
+    }
+
+    .box_img strong {
+        font-size: 18px;
+    }
+
+    .box .part_2_box {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    
+    #checkboxes{
+        position: relative;
+        top: -58px;
+        left: 145px;
+    }
+
+    #checkbox1{
+        display: none;
+    }
+
+    #checkbox2{
+        display: none;
+    }
+
+    #checkboxes label{
+        border: 1px solid #DFE3E9;
+        padding: 13px 15px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -99px;
+        left: 420px;
+        transition: 0.2s;
+    }
+
+    #checkboxes label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #checkbox1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check2{
+        position: relative;
+        top: -52px;
+        left: 78px;
+        margin-left: 10px;
+    }
+
+    #checkbox2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+        
+    
+    #checkboxes_təchizat{
+        position: absolute;
+        display: flex;
+    }
+
+    #checkboxes_təchizat:nth-child(3)
+    {
+        margin-top:55px;
+    }
+
+
+    #check_techizat_1,#check_techizat_2,#check_techizat_3,#check_techizat_4,#check_techizat_5,#check_techizat_6,#check_techizat_7,#check_techizat_8,#check_techizat_9,#check_techizat_10,#check_techizat_11,#check_techizat_12,#check_techizat_13,#check_techizat_14{
+        display: none;
+    }    
+
+
+    #checkboxes_təchizat label{
+        border: 1px solid #DFE3E9;
+        padding: 10px 5px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -175px;
+        left: -25px;
+        font-size: 12px;
+        margin-left: 8px;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
+
+    #checkboxes_təchizat label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #check_techizat_1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_2{
+        position: relative;
+        top: -152px;
+        left: 78px;
+    }
+
+    #check_techizat_2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_3:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_4:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_5:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_6:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_7:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_8:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_9:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_10:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_11:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_12:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_13:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_14:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_15:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_16:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .nav_1 {
+        min-height: 40px;
+        background-color: #F6F7FA;
+        font-size: 14px;
+    }
+
+    .nav_1 .sites ul {
+        position: relative;
+        left: -120px;
+    }
+
+    .nav_1 .support {
+        display: none;
+    }
+
+    .nav_1 .help_lang {
+        display: block;
+    }
+
+    .nav_1 .fav_login {
+        display: block;
+    }
+
+    .nav_2 h4 {
+        color: white;
+        font-weight: bolder;
+        margin-left: 145px;
+    }
+
+    .nav_2 .pages ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_2 .pages ul li {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .nav_2 .pages ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_2 .pages ul li a:hover {
+        color: #F6D0CE;
+    }
+
+    .h_brand {
+        color: white;
+        font-weight: bolder;
+        margin-left: 25px;
+    }
+
+    .yeni_elan {
+        background: #7ED321;
+        border: none;
+        padding: 9px 9px 9px 9px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+        float: right;
+        position: relative;
+        right: -290px;
+        margin-top: -46px;
+    }
+
+    .yeni_elan:hover {
+        background: #85C01F;
+    }
+
+    .filters_cont {
+        background: #EBEDF3;
+        margin-top: -20px;
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    #cars {
+        position: relative;
+        left: 25px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #cars:focus {
+        color: #000;
+    }
+
+    #model {
+        position: relative;
+        left: 40px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #model:focus {
+        color: #000;
+    }
+
+    .radio {
+        position: relative;
+        top: 0px;
+        left: 50px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+    }
+
+    .radio__input {
+        display: none;
+    }
+
+    .radio__label {
+        padding: 12px 43px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .radio__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .radio__input:checked+.radio__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #Cities {
+        position: relative;
+        left: 25px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1 {
+        position: relative;
+        left: 275px;
+        top: -50px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp2 {
+        position: relative;
+        left: 270px;
+        top: -50px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #currency {
+        position: relative;
+        top: -100px;
+        left: 521px;
+        width: 105px;
+        height: 48px;
+        border-radius: 5px;
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    #bans {
+        position: relative;
+        left: 25px;
+        top: -190px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1_year {
+        position: relative;
+        left: 275px;
+        top: -240px;
+        width: 122px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp2_year {
+        position: relative;
+        left: 265px;
+        top: -240px;
+        width: 122px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #elan_sayi {
+        margin-top: -60px;
+        margin-bottom: 10px;
+        padding-left: 25px;
+    }
+
+    #elan_btn {
+        float: right;
+        margin-right: 80px;
+        margin-top: -30px;
+        padding: 10px 35px;
+        border-radius: 8px;
+        background: #CA1016;
+        border: 0px;
+        color: white;
+        transition: 0.2s;
+    }
+
+    #elan_btn:hover {
+        background: #B80D13;
+    }
+
+    .reset {
+        color: #CA1016;
+        text-decoration: none;
+        position: relative;
+        left: 470px;
+        top: -20px;
+    }
+
+    .reset:hover {
+        color: #CA1016;
+    }
+
+    .more_filter {
+        position: relative;
+        left: 520px;
+        top: -20px;
+        color: #CA1016;
+    }
+
+    .more_filter:hover {
+        text-decoration: none;
+        color: #CA1016;
+    }
+
+    #color {
+        position: relative;
+        left: 23px;
+        top: -80px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yanacaq {
+        position: relative;
+        left: 40px;
+        top: -80px;
+        width: 240px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ötürücü {
+        position: relative;
+        left: 45px;
+        top: -80px;
+        width: 160px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #sürətlər_qutusu {
+        position: relative;
+        left: 45px;
+        top: -80px;
+        width: 160px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    #həcm_min {
+        position: relative;
+        left: 24px;
+        top: -70px;
+        margin-bottom: 50px;
+        width: 137px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #həcm_min:focus {
+        color: #000;
+    }
+
+    #həcm_maks {
+        position: relative;
+        left: 19px;
+        top: -70px;
+        width: 137px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #həcm_maks:focus {
+        color: #000;
+    }
+
+    #inp_horse {
+        position: relative;
+        left: 305px;
+        top: -170px;
+        width: 129px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp_horse_maks {
+        position: relative;
+        left: 295px;
+        top: -170px;
+        width: 129px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #yürüş_inp {
+        position: relative;
+        left: 565px;
+        top: -220px;
+        width: 145px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #yürüş_inp_maks {
+        position: relative;
+        left: 555px;
+        top: -220px;
+        width: 145px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .avtosalonlar {
+        position: relative;
+        top: -205px;
+        left: 25px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+        font-weight: light;
+    }
+
+    .avtosalonlar__input {
+        display: none;
+    }
+
+    .avtosalonlar__label {
+        padding: 12px 12px;
+        font-size: 14px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        margin: 0px;
+    }
+
+    .avtosalonlar__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .avtosalonlar__input:checked+.avtosalonlar__label {
+        background: #CA1016;
+        color: white;
+    }
+
+
+    #sahib_sayi {
+        position: relative;
+        left: 35px;
+        top: -205px;
+        width: 162px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yer_sayi {
+        position: relative;
+        left: 45px;
+        top: -205px;
+        width: 162px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    #bazar {
+        position: relative;
+        left: -540px;
+        top: -145px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .təchizat {
+        position: relative;
+        top: -130px;
+        left: 25px;
+    }
+
+    .border {
+        border-bottom: 3px solid #DFE3E9;
+        width: 81%;
+        position: relative;
+        top: -150px;
+        left: 170px;
+    }
+
+    .vip_elanlar {
+        height: 50px;
+        background: #F1F3F7;
+        border-bottom: 1px solid #EAEBF2;
+    }
+
+    .vip_a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        left: 25px;
+    }
+
+    .body_{
+        display: flex;
+    }
+
+    .box {
+        width: 209px;
+        min-height: 266px;
+        position: relative;
+        border-radius: 8px;
+        left: 0px;
+        top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: 0.5s;
+        margin-right: 32px;
+        margin-bottom: 20px;
+    }
+
+    .box:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    .box_img {
+        width: 209px;
+        min-height: 160px;
+        border-radius: 8px;
+    }
+
+    .box_img p:nth-child(2){
+        position: absolute;
+        bottom: 105px;
+        left: 8px;
+        background: #4264FD;
+        padding: 2px 4px;
+        font-size: 11px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box_img img {
+        object-fit: cover;
+        border-radius: 8px;
+        border-bottom-left-radius: 0px;
+        margin-left: -15px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .box_img strong {
+        font-size: 18px;
+    }
+
+    .box .part_2_box {
+        width: 100%;
+        padding: 7px;
+    }
+
+    
+    
+    #checkboxes{
+        position: relative;
+        top: -48px;
+        left: 225px;
+    }
+
+    #checkbox1{
+        display: none;
+    }
+
+    #checkbox2{
+        display: none;
+    }
+
+    #checkboxes label{
+        border: 1px solid #DFE3E9;
+        padding: 13px 25px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -99px;
+        left: 415px;
+        margin-left: 8px;
+        transition: 0.2s;
+    }
+
+    #checkboxes label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #checkbox1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check2{
+        position: relative;
+        top: -52px;
+        left: 78px;
+        margin-left: 30px;
+    }
+
+    #checkbox2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    
+    
+    #checkboxes_təchizat{
+        position: absolute;
+        display: flex;
+    }
+
+    #checkboxes_təchizat:nth-child(3)
+    {
+        margin-top:55px;
+    }
+
+
+    #check_techizat_1,#check_techizat_2,#check_techizat_3,#check_techizat_4,#check_techizat_5,#check_techizat_6,#check_techizat_7,#check_techizat_8,#check_techizat_9,#check_techizat_10,#check_techizat_11,#check_techizat_12,#check_techizat_13,#check_techizat_14{
+        display: none;
+    }    
+
+
+    #checkboxes_təchizat label{
+        border: 1px solid #DFE3E9;
+        padding: 10px 10px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -135px;
+        left: 15px;
+        margin-left: 8px;
+        transition: 0.2s;
+    }
+
+    #checkboxes_təchizat label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #check_techizat_1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_2{
+        position: relative;
+        top: -152px;
+        left: 78px;
+    }
+
+    #check_techizat_2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_3:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_4:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_5:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_6:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_7:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_8:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_9:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_10:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_11:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_12:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_13:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_14:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_15:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_16:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav_1 {
+        min-height: 40px;
+        background-color: #F6F7FA;
+        font-size: 14px;
+    }
+
+    .nav_1 .sites ul {
+        position: relative;
+        left: 0px;
+    }
+
+    .nav_1 .support {
+        display: block;
+    }
+
+    .nav_1 .help_lang {
+        display: block;
+    }
+
+    .nav_1 .fav_login {
+        display: block;
+    }
+
+    .nav_2 h4 {
+        color: white;
+        font-weight: bolder;
+        margin-left: 100px;
+    }
+
+    .nav_2 .pages ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_2 .pages ul li {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .nav_2 .pages ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_2 .pages ul li a:hover {
+        color: #F6D0CE;
+    }
+
+    .h_brand {
+        color: white;
+        font-weight: bolder;
+        margin-left: 95px;
+    }
+
+    .yeni_elan {
+        background: #7ED321;
+        border: none;
+        padding: 9px 9px 9px 9px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+        float: right;
+        position: relative;
+        right: -465px;
+        margin-top: -46px;
+    }
+
+    .yeni_elan:hover {
+        background: #85C01F;
+    }
+
+    .filters_cont {
+        background: #EBEDF3;
+        margin-top: -20px;
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    #cars {
+        position: relative;
+        left: 95px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #cars:focus {
+        color: #000;
+    }
+
+    #model {
+        position: relative;
+        left: 100px;
+        top: 0px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #model:focus {
+        color: #000;
+    }
+
+    .radio {
+        position: relative;
+        top: 0px;
+        left: 120px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+    }
+
+    .radio__input {
+        display: none;
+    }
+
+    .radio__label {
+        padding: 13px 17px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+    }
+
+    .radio__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .radio__input:checked+.radio__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #Cities {
+        position: relative;
+        left: 143px;
+        top: 0px;
+        width: 235px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1 {
+        position: relative;
+        left: 95px;
+        top: 0px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp2 {
+        position: relative;
+        left: 85px;
+        top: 0px;
+        width: 119px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #currency {
+        position: relative;
+        top: -50px;
+        left: 336px;
+        width: 75px;
+        height: 48px;
+        border-radius: 5px;
+        color: #000;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    .kredit:hover {
+        background: black;
+    }
+
+    #bans {
+        position: relative;
+        left: 510px;
+        top: -50px;
+        width: 256px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #inp1_year {
+        position: relative;
+        left: 873px;
+        top: -100px;
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp2_year {
+        position: relative;
+        left: 863px;
+        top: -100px;
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #elan_sayi {
+        margin-top: -60px;
+        margin-bottom: 10px;
+        padding-left: 95px;
+    }
+
+    #elan_btn {
+        float: right;
+        margin-right: 35px;
+        margin-top: -30px;
+        padding: 10px 35px;
+        border-radius: 8px;
+        background: #CA1016;
+        border: 0px;
+        color: white;
+        transition: 0.2s;
+    }
+
+    #elan_btn:hover {
+        background: #B80D13;
+    }
+
+    .reset {
+        color: #CA1016;
+        text-decoration: none;
+        padding-left: 95px;
+        position: relative;
+        top: -20px;
+        left: 650px;
+    }
+
+    .reset:hover {
+        color: #CA1016;
+    }
+
+    .more_filter {
+        position: relative;
+        left: 685px;
+        top: -20px;
+        color: #CA1016;
+    }
+
+    .more_filter:hover {
+        text-decoration: none;
+        color: #CA1016;
+    }
+
+    #color {
+        position: relative;
+        left: 95px;
+        top: -90px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yanacaq {
+        position: relative;
+        left: 100px;
+        top: -90px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ötürücü {
+        position: relative;
+        left: 117px;
+        top: -90px;
+        width: 255px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #sürətlər_qutusu {
+        position: relative;
+        left: 142px;
+        top: -90px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #həcm_min {
+        position: relative;
+        left: -872px;
+        top: -30px;
+        margin-bottom: 50px;
+        width: 157px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #həcm_min:focus {
+        color: #000;
+    }
+
+    #həcm_maks {
+        position: relative;
+        left: 250px;
+        top: -130px;
+        width: 157px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #həcm_maks:focus {
+        color: #000;
+    }
+
+    #inp_horse {
+        position: relative;
+        left: 415px;
+        top: -180px;
+        width: 169px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #inp_horse_maks {
+        position: relative;
+        left: 405px;
+        top: -180px;
+        width: 169px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #yürüş_inp {
+        position: relative;
+        left: 755px;
+        top: -230px;
+        width: 178px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #yürüş_inp_maks {
+        position: relative;
+        left: 745px;
+        top: -230px;
+        width: 178px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .avtosalonlar {
+        position: relative;
+        top: -215px;
+        left: 95px;
+        display: inline-flex;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.25);
+        font-weight: light;
+    }
+
+    .avtosalonlar__input {
+        display: none;
+    }
+
+    .avtosalonlar__label {
+        padding: 12px 12px;
+        font-size: 14px;
+        font-family: sans-serif;
+        color: #8D94AD;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.1s;
+        margin: 0px;
+    }
+
+    .avtosalonlar__label:not(:last-of-type) {
+        border-right: 1px solid #dfe3e9;
+    }
+
+    .avtosalonlar__input:checked+.avtosalonlar__label {
+        background: #CA1016;
+        color: white;
+    }
+
+    #sahib_sayi {
+        position: relative;
+        left: 100px;
+        top: -215px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #yer_sayi {
+        position: relative;
+        left: 100px;
+        top: -215px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #bazar {
+        position: relative;
+        left: -610px;
+        top: -150px;
+        width: 232px;
+        height: 50px;
+        border-radius: 5px;
+        content: "Marka";
+        color: #8D94AD;
+        outline: 0px;
+        border: 1px solid #dfe3e9;
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .təchizat {
+        position: relative;
+        top: -130px;
+        left: 95px;
+    }
+
+    .border {
+        border-bottom: 3px solid #DFE3E9;
+        width: 75%;
+        position: relative;
+        top: -150px;
+        left: 240px;
+    }
+
+    /* Vip Elanlar */
+
+    .vip_elanlar {
+        height: 50px;
+        background: #F1F3F7;
+        border-bottom: 1px solid #EAEBF2;
+    }
+
+    .vip_a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        left: 95px;
+    }
+
+    .body_{
+        display: flex;
+    }
+
+    .box {
+        width: 229px;
+        min-height: 266px;
+        /* background: red; */
+        position: relative;
+        border-radius: 8px;
+        left: 80px;
+        top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: 0.5s;
+        margin-right: 32px;
+        margin-bottom: 20px;
+    }
+
+    .box:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+    .box_img {
+        width: 229px;
+        height: 160px;
+        border-radius: 8px;
+        margin-left: -15px;
+    }
+
+    .box_img p:nth-child(2){
+        position: absolute;
+        bottom: 105px;
+        left: 8px;
+        background: #4264FD;
+        padding: 2px 4px;
+        font-size: 11px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box_img img {
+        object-fit: cover;
+        border-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .box_img strong {
+        font-size: 18px;
+    }
+
+    .box .part_2_box {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    .box .part_2_box strong{
+        font-size: 17px;
+    }
+
+    #checkboxes{
+        position: absolute;
+    }
+
+
+    #checkbox1{
+        display: none;
+    }
+
+    #checkbox2{
+        display: none;
+    }
+
+    #checkboxes label{
+        border: 1px solid #DFE3E9;
+        padding: 13px 13px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -99px;
+        left: 415px;
+        margin-left: 8px;
+        transition: 0.2s;
+    }
+
+    #checkboxes label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #checkbox1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check2{
+        position: relative;
+        top: -52px;
+        left: 78px;
+    }
+
+    #checkbox2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    
+    
+    #checkboxes_təchizat{
+        position: absolute;
+        display: flex;
+    }
+
+    #checkboxes_təchizat:nth-child(3)
+    {
+        margin-top:55px;
+    }
+
+
+    #check_techizat_1,#check_techizat_2,#check_techizat_3,#check_techizat_4,#check_techizat_5,#check_techizat_6,#check_techizat_7,#check_techizat_8,#check_techizat_9,#check_techizat_10,#check_techizat_11,#check_techizat_12,#check_techizat_13,#check_techizat_14{
+        display: none;
+    }    
+
+
+    #checkboxes_təchizat label{
+        border: 1px solid #DFE3E9;
+        padding: 10px 10px;
+        background: white;
+        border-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -135px;
+        left: 85px;
+        margin-left: 8px;
+        transition: 0.2s;
+    }
+
+    #checkboxes_təchizat label:hover{
+        border: 1px solid #979EB5;
+        cursor: pointer;
+    }
+
+    #check_techizat_1:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_2{
+        position: relative;
+        top: -152px;
+        left: 78px;
+    }
+
+    #check_techizat_2:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_3:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_4:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_5:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_6:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_7:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_8:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_9:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_10:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_11:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_12:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_13:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+
+    #check_techizat_14:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_15:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+    #check_techizat_16:checked ~ label{
+        background: #FFE6E5;
+        color: #CA1016;
+        border: 1px solid #CA1016;
+    }
+}

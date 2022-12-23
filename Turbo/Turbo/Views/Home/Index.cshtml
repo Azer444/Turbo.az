@@ -1,0 +1,1025 @@
+﻿@model IEnumerable<Advert>
+
+
+<main>
+    <section id="filters">
+        <div class="container-fluid filters_cont">
+            <div class="row">
+                <div class="container">
+                    <div class="filter_place" style="margin-top: -13px;">
+                        <div class="part_1_filters">
+                            <select name="cars" id="cars">
+                                <option value="city_select" disabled selected hidden>Marka</option>
+                                <option value="reset">Sıfırla</option>
+
+                                @foreach (var item in Model)
+                                {
+                                    <option value="reset">@item.Brand.BrandName</option>
+                                }
+
+
+
+                            </select>
+
+                            <select name="Model" id="model">
+                                <option value="model" dis>Model</option>
+                            </select>
+
+                            <div class="radio">
+                                <input class="radio__input" checked type="radio" value="option1" name="myRadio"
+                                       id="myRadio1">
+                                <label class="radio__label" for="myRadio1">Hamısı</label>
+                                <input class="radio__input" type="radio" value="option2" name="myRadio" id="myRadio2">
+                                <label class="radio__label" for="myRadio2">Yeni</label>
+                                <input class="radio__input" type="radio" value="option3" name="myRadio" id="myRadio3">
+                                <label class="radio__label" for="myRadio3">Sürülmüş</label>
+                            </div>
+
+                            <select name="City" id="Cities">
+                                <option value="city_select" disabled selected hidden>Şəhər</option>
+                                <option value="reset">Sıfırla</option>
+                                <option value="Ağcabədi">Ağcabədi</option>
+                                <option value="Ağdam">Ağdam</option>
+                                <option value="Ağdaş">Ağdaş</option>
+                                <option value="Ağstafa">Ağstafa</option>
+                                <option value="Ağsu">Ağsu</option>
+                                <option value="Astara">Astara</option>
+                                <option value="Ağcabədi">Ağcabədi</option>
+                                <option value="Bakı">Bakı</option>
+                            </select>
+                        </div>
+                        <div class="part_2_filters">
+                            <div id="price">
+                                <input type="number" inputmode="numeric" placeholder="Qiymət, min." id="inp1">
+                                <input type="number" inputmode="numeric" placeholder="maks." id="inp2">
+                            </div>
+
+                            <div id="currency1">
+                                <select name="currency" id="currency">
+                                    <option value="AZN">AZN</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+
+                                <div id="checkboxes">
+                                    <div id="check1">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1">Kredit</label>
+                                    </div>
+                                    <div id="check2">
+                                        <input type="checkbox" id="checkbox2">
+                                        <label for="checkbox2">Barter</label>
+                                    </div>
+                                </div>
+
+                                <select name="bans" id="bans">
+                                    <option value="city_select" disabled selected hidden>Ban növü</option>
+                                    <option value="reset">Sıfırla</option>
+                                    <option value="Ağcabədi">Avtobus</option>
+                                    <option value="Ağdam">Dartqı</option>
+                                    <option value="Ağdaş">Furqon</option>
+                                    <option value="Ağstafa">Hetçbek</option>
+                                    <option value="Ağsu">Kabriolet</option>
+                                    <option value="Astara">Karvan</option>
+                                    <option value="Ağcabədi">Kupe</option>
+                                </select>
+
+
+                                <div id="year">
+                                    <input type="text" inputmode="numeric" placeholder="il, min." id="inp1_year">
+                                    <input type="text" inputmode="numeric" placeholder="maks." id="inp2_year">
+                                </div>
+
+                                <div id="hided" class="hidden">
+                                    <select name="color" id="color">
+                                        <option value="select" disabled selected hidden>Rəng</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="Qara">Qara</option>
+                                        <option value="Yaş asfalt">Yaş asfalt</option>
+                                        <option value="Gümüşü">Gümüşü</option>
+                                        <option value="Ağ">Ağ</option>
+                                        <option value="Bej">Bej</option>
+                                        <option value="Tünd qırmızı">Tünd qırmızı</option>
+                                    </select>
+
+                                    <select name="yanacaq" id="yanacaq">
+                                        <option value="select" disabled selected hidden>Yanacaq növü</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="Benzin">Benzin</option>
+                                        <option value="Dizel">Dizel</option>
+                                        <option value="Qaz">Qaz</option>
+                                        <option value="Elektro">Elektro</option>
+                                        <option value="Hibrid">Hibrid</option>
+                                        <option value="Plug-in Hibrid">Plug-in Hibrid</option>
+                                    </select>
+
+                                    <select name="Ötürücü" id="ötürücü">
+                                        <option value="select" disabled selected hidden>Ötürücü</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="Arxa">Arxa</option>
+                                        <option value="Ön">Ön</option>
+                                        <option value="Tam">Tam</option>
+                                    </select>
+
+                                    <select name="Sürətlər_qutusu" id="sürətlər_qutusu">
+                                        <option value="select" disabled selected hidden>Sürətlər qutusu</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="Mexaniki">Mexaniki</option>
+                                        <option value="Avtomat">Avtomat</option>
+                                        <option value="Robotlaşdırılmış">Robotlaşdırılmış</option>
+                                        <option value="Variator">Variator</option>
+                                    </select>
+
+                                    <select name="Həcm_min" id="həcm_min">
+                                        <option value="select" disabled selected hidden>
+                                            Həcm (sm<sup>3</sup>), min.
+                                        </option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="0">0</option>
+                                        <option value="100">100</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="400">400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="1000">1000</option>
+                                        <option value="1100">1100</option>
+                                        <option value="1200">1200</option>
+                                        <option value="1300">1300</option>
+                                        <option value="1400">1400</option>
+                                        <option value="1500">1500</option>
+                                    </select>
+
+                                    <select name="Həcm_min" id="həcm_maks">
+                                        <option value="select" disabled selected hidden>maks</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="0">0</option>
+                                        <option value="100">100</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="400">400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="1000">1000</option>
+                                        <option value="1100">1100</option>
+                                        <option value="1200">1200</option>
+                                        <option value="1300">1300</option>
+                                        <option value="1400">1400</option>
+                                        <option value="1500">1500</option>
+                                    </select>
+
+                                    <div id="horse_power">
+                                        <input type="text" inputmode="numeric" placeholder="Güc (a. g.), min."
+                                               id="inp_horse">
+                                        <input type="text" inputmode="numeric" placeholder="maks." id="inp_horse_maks">
+                                    </div>
+
+                                    <div id="Yürüş">
+                                        <input type="text" inputmode="numeric" placeholder="Yürüş (km), min."
+                                               id="yürüş_inp">
+                                        <input type="text" inputmode="numeric" placeholder="maks." id="yürüş_inp_maks">
+                                    </div>
+
+                                    <div class="avtosalonlar">
+                                        <input class="avtosalonlar__input" checked type="radio" value="options1"
+                                               name="myRadios" id="myRadios1">
+                                        <label class="avtosalonlar__label" for="myRadios1"
+                                               style="font-weight: 400;">Hamısı</label>
+                                        <input class="avtosalonlar__input" type="radio" value="options2" name="myRadios"
+                                               id="myRadios2">
+                                        <label class="avtosalonlar__label" for="myRadios2"
+                                               style="font-weight: 400;">Avtosalonlar</label>
+                                        <input class="avtosalonlar__input" type="radio" value="options3" name="myRadios"
+                                               id="myRadios3">
+                                        <label class="avtosalonlar__label" for="myRadios3"
+                                               style="font-weight: 400;">Şəxsi</label>
+                                    </div>
+
+                                    <select name="sahib_sayi" id="sahib_sayi">
+                                        <option value="select" disabled selected hidden>Sahiblərinin sayı</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4+">4 və daha artıq</option>
+                                    </select>
+
+                                    <select name="yer_sayi" id="yer_sayi">
+                                        <option value="select" disabled selected hidden>Yerlərin sayı</option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8+">8+</option>
+                                    </select>
+
+                                    <select name="bazar" id="bazar">
+                                        <option value="select" disabled selected hidden>
+                                            Hansı bazar üçün yığılıb
+                                        </option>
+                                        <option value="reset">Sıfırla</option>
+                                        <option value="Amerika">Amerika</option>
+                                        <option value="Avropa">Avropa</option>
+                                        <option value="Digər">Digər</option>
+                                        <option value="Dubay">Dubay</option>
+                                        <option value="Koreya">Koreya</option>
+                                    </select>
+
+                                    <div id="təchizat">
+                                        <h5 class="təchizat">Avtomobilin Təchizatı</h5>
+
+                                        <div class="border"></div>
+
+                                        <div id="checkboxes_təchizat">
+                                            <div class="check_techizat_1">
+                                                <input type="checkbox" id="check_techizat_1">
+                                                <label for="check_techizat_1">Yüngül lehimli disklər</label>
+                                            </div>
+                                            <div class="check_techizat_2">
+                                                <input type="checkbox" id="check_techizat_2">
+                                                <label for="check_techizat_2">Abs</label>
+                                            </div>
+
+                                            <div class="check_techizat_3">
+                                                <input type="checkbox" id="check_techizat_3">
+                                                <label for="check_techizat_3">Lyuk</label>
+                                            </div>
+
+                                            <div class="check_techizat_4">
+                                                <input type="checkbox" id="check_techizat_4">
+                                                <label for="check_techizat_4">Yağış sensoru</label>
+                                            </div>
+
+                                            <div class="check_techizat_5">
+                                                <input type="checkbox" id="check_techizat_5">
+                                                <label for="check_techizat_5">Mərkəzi qapanma</label>
+                                            </div>
+
+                                            <div class="check_techizat_6">
+                                                <input type="checkbox" id="check_techizat_6">
+                                                <label for="check_techizat_6">Park radarı</label>
+                                            </div>
+
+                                            <div class="check_techizat_7">
+                                                <input type="checkbox" id="check_techizat_7">
+                                                <label for="check_techizat_7">Kondisioner</label>
+                                            </div>
+
+                                            <div class="check_techizat_8">
+                                                <input type="checkbox" id="check_techizat_8">
+                                                <label for="check_techizat_8">Oturacaqların isidilməsi</label>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div id="checkboxes_təchizat">
+                                            <div class="check_techizat_9">
+                                                <input type="checkbox" id="check_techizat_9">
+                                                <label for="check_techizat_9">Dəri salon</label>
+                                            </div>
+                                            <div class="check_techizat_10">
+                                                <input type="checkbox" id="check_techizat_10">
+                                                <label for="check_techizat_10">Ksenon lampalar</label>
+                                            </div>
+
+                                            <div class="check_techizat_11">
+                                                <input type="checkbox" id="check_techizat_11">
+                                                <label for="check_techizat_11">Arxa görüntü kamerası</label>
+                                            </div>
+
+                                            <div class="check_techizat_12">
+                                                <input type="checkbox" id="check_techizat_12">
+                                                <label for="check_techizat_12">Yan pərdələr</label>
+                                            </div>
+
+                                            <div class="check_techizat_13">
+                                                <input type="checkbox" id="check_techizat_13">
+                                                <label for="check_techizat_13">Oturacaqların ventilyasiyası</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="buttons" style="margin-top: 50px;">
+                                    <div id="elan_sayi">
+                                        <p>
+                                            Bu gün: <a style="text-decoration: none; cursor: pointer;">1963 yeni elan</a>
+                                        </p>
+                                    </div>
+
+                                    <a href="" class="reset" style="text-decoration: none;">Sıfırla</a>
+
+                                    <button id="elan_btn">Elanları göstər</button>
+
+                                    <a href="#" class="more_filter" id="more_filter">
+                                        Daha çox filtr <i class="fa-solid fa-angle-down" style="font-size: 15px;"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Vip Elanlar">
+        <div class="container-fluid vip_elanlar">
+            <div class="row">
+                <div class="container">
+                    <a class="vip_a" style="text-decoration: none; color:black;">VIP ELANLAR</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/Lexus.jpg" alt="chevrolet_equinox" width="100%" height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>67 900 $</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Lexus GX 460 <br> 2015, 4.6L, 49 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 04.10.2022 10:32</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/Toyota RAV 4.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>38 700 $</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Toyota RAV 4 <br> 2022, 2.0L, 0 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/rav4.jpg" alt="chevrolet_equinox" width="100%" height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>49 000 $</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Toyota RAV 4 <br> 2020, 2.5L, 0 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Son Elanlar">
+        <div class="container-fluid vip_elanlar" style="margin-top: 20px;">
+            <div class="row">
+                <div class="container">
+                    <a class="vip_a" style="text-decoration: none; color:black;">SON ELANLAR</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="body">
+                <div class="body_">
+                    <div class="row">
+                        @*@foreach (var item in Model.Models)
+                        {
+                        <div class="box col-sm-12 col-md-6 col-lg-3">
+                            <div class="box_img">
+                                <img src="~/assets/imgs/@item.AdvertImages.FirstOrDefault(m=>m.IsMain)?.Image" alt="@item.AdvertImages.FirstOrDefault(m=>m.IsMain)?.Image" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>@item.Price AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                  @item.Name<br> @item.Year, @item.Gear, @item.Kilometr km <br> <span style="color: #8D94AD; font-size: 13px;">@item.City, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        }*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Premium Elanlar">
+        <div class="container-fluid vip_elanlar" style="margin-top: 20px;">
+            <div class="row">
+                <div class="container">
+                    <a class="vip_a" style="text-decoration: none; color:black;">PREMIUM ELANLAR</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/Lexus.jpg" alt="chevrolet_equinox" width="100%" height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>67 900 $</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Lexus GX 460 <br> 2015, 4.6L, 49 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 04.10.2022 10:32</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/Toyota RAV 4.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>38 700 $</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Toyota RAV 4 <br> 2022, 2.0L, 0 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/rav4.jpg" alt="chevrolet_equinox" width="100%" height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>49 000 $</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Toyota RAV 4 <br> 2020, 2.5L, 0 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 body_">
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box_img">
+                                <img src="assets/imgs/chevrolet_equinox.jpg" alt="chevrolet_equinox" width="100%"
+                                     height="100%">
+                                <p>Salon</p>
+                                <i class="fa-regular fa-heart"
+                                   style="position: absolute; top:5px; right: 8px; font-size:24px; color:white;"
+                                   onclick="myFunction(this)" id="heart"></i>
+                            </div>
+                            <div class="part_2_box">
+                                <strong>29 400 AZN</strong>
+                                <br>
+                                <p style="font-size: 16px;">
+                                    Chevrolet Equinox <br> 2020, 1.5L, 35 000 km <br> <span style="color: #8D94AD; font-size: 13px;">Bakı, 23.09.2022 11:39</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

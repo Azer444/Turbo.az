@@ -1,0 +1,121 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/imgs/turboAzFavIcon.png">
+    <title>@ViewData["Title"] - Turbo.az</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid nav_1 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="container nav_1">
+                        <div class="sites">
+                            <ul>
+                                <li><a href="https://tap.az/" target="_blank">Tap.az</a></li>
+                                <li><a href="https://bina.az/" target="_blank">Bina.az</a></li>
+                                <li><a href="https://boss.az/" target="_blank">Boss.az</a></li>
+                            </ul>
+                        </div>
+                        <div class="support">
+                            <ul>
+                                <li>Dəstək: </li>
+                                <li><a href="tel:(051)672-29-29">(051)672-29-29</a></li>
+                                <li><a href="tel:(051)672-29-29">(051)672-29-29</a></li>
+                            </ul>
+                        </div>
+                        <div class="help_lang">
+                            <ul>
+                                <li><a href="">Yardım</a></li>
+                                <li><a href="">RU</a></li>
+                            </ul>
+                        </div>
+                        <div class="fav_login">
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-heart"></i> Seçilmişlər</a></li>
+                                <li><a href=""><i class="fa-solid fa-circle-user"></i> Giriş</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Navbar">
+        <nav class="navbar navbar-default" style="background: #CA1016; border-radius: 0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed no-border" style="border: 0px;"
+                            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="icon-bar" style="background: white;"></span>
+                        <span class="icon-bar" style="background: white;"></span>
+                        <span class="icon-bar" style="background: white;"></span>
+                    </button>
+                    <div class="h_brand">
+                        <a class="navbar-brand " href="#" style="color: white;">TURBO.AZ</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav hover">
+                        <li><a href="#" style="color: white;">Bütün elanlar</a></li>
+                        <li><a href="#" style="color: white;">Avtosalonlar</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle dropdown_parts dropdown" data-toggle="dropdown"
+                               role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                                Ehtiyat
+                                hissələr və
+                                aksesuarlar
+                            </a>
+                            <ul class="dropdown-menu"
+                                style="min-height: 270px; background: white; box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%); margin-top: -10px; border-radius: 8px; font-size: 15px; line-height: 40px; width: 230px; padding-left: 2px;">
+                                <li>
+                                    <a href="index.html">Audio və video texnika</a>
+                                    <a href="index.html">Avtokosmetika və avtokimya</a>
+                                    <a href="index.html">Ehtiyat hissələr</a>
+                                    <a href="index.html">GPS naviqatorlar</a>
+                                    <a href="index.html">Qeydiyyat nişanları</a>
+                                    <a href="index.html">Siqnalizasiyalar</a>
+                                    <a href="index.html">Videoqeydiyyatçılar</a>
+                                    <a href="index.html">Şinlər, disklər və təkərlər</a>
+                                    <a href="index.html">Digər</a>
+                                </li>
+                            </ul>
+                            <button class="yeni_elan"><i class="fa-solid fa-circle-plus"></i><a style="color: white; text-decoration: none;" href="index.html">Yeni elan</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    @RenderBody()
+    </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Turbo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <section id="Footer">
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/more_filter.js"></script>
+</body>
+
+</html>
+
+
